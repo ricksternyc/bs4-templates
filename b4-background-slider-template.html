@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap 4 Background Slider</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container-fluid" id="content">
+      <div class="carousel-inner" role="listbox">
+        <div id="indicators-slide-1" class="carousel slide" data-ride="carousel">
+
+          <!-- Slide One -->
+          <div class="carousel-item active" style="background-image: url('<?php the_field('home_slide_1'); ?>')">
+
+            <!-- Content Here -->
+
+          </div><!-- .carousel-item -->
+
+          <!-- Slide Two -->
+          <div class="carousel-item" style="background-image: url('<?php the_field('home_slide_2'); ?>')">
+
+            <!-- Content Here -->
+
+          </div><!-- .carousel-item -->
+
+          <!-- Slide Three -->
+          <div class="carousel-item" style="background-image: url('<?php the_field('home_slide_3'); ?>')">
+
+            <!-- Content Here -->
+
+          </div><!-- .carousel-item -->
+
+          <!-- Controls and Indicators -->         
+          <ol class="carousel-indicators">
+            <li data-target="indicators-slide-1" data-slide-to="0" class="active"></li>
+            <li data-target="indicators-slide-1" data-slide-to="1"></li>
+            <li data-target="indicators-slide-1" data-slide-to="2"></li>
+          </ol>
+
+          <a class="carousel-control-prev" href="#indicators-slide-1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#indicators-slide-1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div><!-- indicators -->
+      </div><!-- .carousel-inner -->
+    </div><!-- .container-fluid -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>    
