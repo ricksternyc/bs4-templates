@@ -26,9 +26,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <main class="site-main" id="main" role="main">
 
 
-                    <?php // Display blog posts on any page @ https://m0n.co/l
+                    <?php //
                     $temp = $wp_query; $wp_query= null;
-                    $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
+                    $wp_query = new WP_Query(); $wp_query->query('posts_per_page=10' . '&paged='. $paged);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
                     <h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
